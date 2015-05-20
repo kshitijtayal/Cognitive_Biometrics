@@ -1,0 +1,35 @@
+#!/usr/bin/python
+# University of Minnesota
+import sys
+
+nargs = len(sys.argv)
+if nargs < 5:
+    print 'Insufficient arguments'
+    print 'Usage: python csv2arff.py <infile> <outfile> <#features> <dataname>'
+    sys.exit(1)
+infile = sys.argv[1]    # csv file we want to convert
+outfile = sys.argv[2]   # name of the arff file we want csv file to convert into
+features = int(sys.argv[3])  # number of features(Exclude class)
+name = sys.argv[4] # any name of the relation
+try:
+    f = open(infile)
+except Exception:
+    print "Input file not found"
+    sys.exit(1)
+
+try:
+    o = open(outfile,'w')
+except Exception:
+    print "Could not open output file"
+    sys.exit(1)
+o.write("@RELATION "+name+"\n")
+o.write("\n")
+for i in range(features):
+    str = "@ATTRIBUTE feature%d NUMERIC"%i
+    o.write(str+"\n")
+o.write("@ATTRIBUTE class {0.000000,1.000000}\n")
+o.write("@DATA\n\n")
+for l in f:
+    o.write(l)
+f.close()
+o.close()
