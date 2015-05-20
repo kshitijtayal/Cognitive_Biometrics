@@ -1,7 +1,6 @@
 import numpy
 from numpy import genfromtxt
 import re
-a = numpy.zeros(shape=(3300,32000))
 my_data = genfromtxt('finalcombined1.csv', delimiter=',')
 print my_data.shape
 
