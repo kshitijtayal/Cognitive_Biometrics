@@ -1,0 +1,3 @@
+./bin/mallet import-file --input ~/Documents/30Min_tier1_desc.txt --output topic.mallet --keep-sequence --remove-stopwords
+
+./bin/mallet train-topics  --input topic.mallet --num-topics 50 --output-state topic-state.gz --output-topic-keys tutorial_keys.txt --output-doc-topics tutorial_compostion.txt 
