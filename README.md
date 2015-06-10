@@ -30,4 +30,5 @@ After that Stylistic Feature can be extracted from SyntacticFeatureExtractor.jav
 Extract features from mallet software (http://mallet.cs.umass.edu) file.Delete 1st row and run topic.py
 Combine all the three feature set into combinedmatrix.csv
 Run pdist2.java on  combinedmatrix.csv.(Code for pdist2 avilable on https://github.com/neetip/languagebiometrics)
-Run csv2arff.py on the output given by pdist2.java
+Run csv2arff.py on the output given by pdist2.java to convert csv file  to arff format.
+Run Weka's logistic regression on the arff file to get the desired output.
