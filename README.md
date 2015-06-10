@@ -23,7 +23,7 @@ Avg_sen.py - calculates the average length of sentence in a blog
 
 DESCRIPTION:
 
-Syntactic_pair_generator.py - For extracting pairs enter range of blog written by an author .There are three files that are outputted.Enter the number of datapoints per thread.
+Syntactic_pair_generator.py - For extracting pairs enter range of blog written by an author.Eg. For Data 5 range will be 5 to 10.It will take countblog.txt file as input which contains number of blogs written by a particular author.Also  Enter the number of datapoints per thread.There are three files that are outputted.
 Run row_normalization to normaize the features
 get_tier.py - Generates the subset of tier1 according to the author list of Syntactic_pair_generator.  
 After that Stylistic Feature can be extracted from SyntacticFeatureExtractor.java.
