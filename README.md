@@ -33,6 +33,7 @@ DESCRIPTION:
 - Run pdist2.java on  combinedmatrix.csv.(Code for pdist2 avilable on https://github.com/neetip/languagebiometrics)
 - Run csv2arff.py on the output given by pdist2.java to convert csv file  to arff format.
 - Run Weka's logistic regression on the arff file to get the desired output.
-- ------
+
+-------
 Data: Data can be accessed from http://www.icwsm.org/data/
 To extract personal stories from the dataset, refer to: http://people.ict.usc.edu/~gordon/srp.html
